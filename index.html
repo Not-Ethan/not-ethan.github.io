@@ -3,13 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of [Your Name], a Computer Science Student.">
-    <title>Your Portfolio</title>
+    <meta name="description" content="Personal Portfolio of Ethan Wang, a Computer Science Student.">
+    <title>Ethan Wang's Portfolio</title>
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com/3.4.5"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="cyber-bg text-white">
+    <nav class="fixed top-0 w-full bg-black bg-opacity-75 text-white py-4 z-10">
+        <div class="container mx-auto flex justify-between px-4">
+            <h1 class="text-xl font-bold neon">Ethan Wang</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#projects" class="hover:text-purple-500">Projects</a></li>
+                <li><a href="#about" class="hover:text-purple-500">About</a></li>
+                <li><a href="#contact" class="hover:text-purple-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>    
+    <header class="section">
+        <h1 class="text-5xl font-bold neon animate-fade-in">Ethan Wang</h1>
+        <p class="text-xl mt-4 animate-fade-in-delay">Computer Science Student | Developer | NodeJS Python Java</p>
+        <a href="#projects" class="mt-6 button inline-block animate-bounce">My Work</a>
+    </header>    
 
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="text-4xl neon mb-8">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="project-card border-t-4 border-gradient-to-r from-purple-500 to-blue-500">
+                <h3 class="text-2xl neon font-bold">Darch AI</h3>
+                <p class="mt-4">
+                    Debate research AI assistant built with Node.js, Express, Flask, Transformers, MongoDB.
+                </p>
+            </div>
+            <div class="project-card border-t-4 border-gradient-to-r from-purple-500 to-blue-500">
+                <h3 class="text-2xl neon font-bold">Project 2</h3>
+                <p class="mt-4">
+                    Description of the second project.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Swiper Section -->
+    <section class="section">
+        <div>
+            <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-white-900 md:text-5xl lg:text-6xl dark:text-white">
+                Technology I've Worked With
+            </h1>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper neon">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide tech-card">
+                    <img src="assets/java-ar21.svg" alt="Java" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/Node.js_logo.svg" alt="NodeJs" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/python-logo-generic.svg" alt="Python" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/Typescript_logo_2020.svg" alt="Typescript" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/icons8-ejs.svg" alt="EJS" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/Nginx_logo.svg" alt="Nginx" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/Grafana.svg" alt="Grafana" class="tech-image">
+                </div>
+                <div class="swiper-slide tech-card">
+                    <img src="assets/MongoDB_Logo.svg" alt="Mongodb" class="tech-image">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="text-4xl neon mb-8">About Me</h2>
+        <p class="text-xl max-w-3xl mx-auto">
+            I'm a passionate computer science student with an interest in full-stack development, artificial intelligence, and creative coding projects.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="section">
+        <p class="text-center">Made with ❤️ by Ethan Wang</p>
+        <p class="text-center mt-2">Reach out: <a href="mailto:edw39@case.edu" class="neon">edw39@case.edu</a></p>
+        <br>
+        <p class="text-center mt-2">
+            All product names, logos, and brands are property of their respective owners. <br>Use of these names, logos, and brands does not imply endorsement. <br>All company, product, and service names used in this website are for identification purposes only.
+        </p>        
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        freeMode: {
+            enabled:true,
+            sticky:true
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+            scale: 1.2,
+            stretch: 0,
+            rotate: 10,
+            slideShadows:false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
 </body>
 </html>
