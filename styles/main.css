@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+/* Neon glow effect */
+.neon {
+    color: #0e5afe;
+    text-shadow:
+        0 0 10px #0e5afe,
+        0 0 20px #0e5afe,
+        0 0 40px #a200ff9a,
+        0 0 80px #a200ff7d;
+}
+
+/* Cyberpunk styling for sections */
+.cyber-bg {
+    background: #0d0d0d;
+    background: linear-gradient(135deg, #0d0d0d 50%, #1a1a1a 50%);
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.button {
+    background: #a200ff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #0e5afe;
+}
+
+/* Styling for project cards */
+.project-card {
+    border: 1px solid #a200ff;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(162, 0, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Swiper and Tech Card Styling */
+.swiper {
+    width: 90vw;
+    height: 40vh;
+    border-color: rgba(162, 0, 255);
+    border-width: 0.2rem;
+}
+
+.tech-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.tech-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    object-fit: contain; /* Keeps image aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Swiper buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
