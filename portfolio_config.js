@@ -1,0 +1,59 @@
+export const fullname = "Ethan Wang"
+export const title = "Computer Science Student"
+export const bio = [
+    "Hey there, I'm Ethan!",
+    "As a <strong>Computer Science student</strong> at Case Western Reserve University, I'm deeply passionate about creating innovative software solutions that solve real-world problems. My experience is with, <strong>web development</strong>, and <strong>AI-powered tools</strong>, and I love working on projects that merge technology with user-centric design.",
+    "When I'm not coding, you can probably find me in the gym or learning a new song on the piano.",
+]
+export const experience = [
+    {
+        startDate: "June 2023",
+        endDate: "August 2023",
+        employer: "University Notre Dame",
+        title: "Research Intern",
+        location: "Notre Dame, IN",
+        description: [
+            "Conducted research in the Lab of Dr. Hai Lin focusing on robotic system simulations.", 
+            "Utilized <strong>Deepnote</strong> and <strong>Drake</strong> for visualizing robotic systems, enabling accurate simulations of control inputs.", 
+            "Observed and contributed to drone testing experiments to explore navigation and control strategies in dynamic environments."
+        ]
+    },
+    {
+        startDate: "June 2022, 2024",
+        endDate: "August 2022, 2024",
+        employer: "Brightstar Capital LLC",
+        title: "Intern",
+        location: "Rockville, MD",
+        description: [
+            "Redesigned and maintained the company website, improving usability and ensuring timely updates to important information.",
+            "Streamlined daily operations by assisting with administrative tasks, including call handling, file organization, and data entry.",
+            "Diagnosed and resolved on-site technical issues, reducing downtime and enhancing workplace efficiency.",
+            "Coordinated rental property showings between agents and tenants, improving scheduling efficiency.",
+            "Led the migration of the company's portfolio to Appfolio Portfolio Manager, standardizing hundreds of records."
+        ]
+    }
+]
+
+export const education = [
+    {
+        startDate: "August 2024",
+        endDate: "May 2027 (expected)",
+        school: "Case Western Reserve University",
+        degree: "Bachelor of Science in Computer Science",
+        location: "Cleveland, OH",
+        description: [
+            "Relevant Coursework: Data Structures, Algorithms, Software Engineering, Artificial Intelligence, Machine Learning, Computer Networks, Operating Systems, Web Development",
+            "Member of the Case Western Reserve University Hacker Society, where I collaborate with other students on coding projects and attend workshops on new technologies.",
+            "Recipient of the Case Western Reserve University Dean's Scholarship, awarded to students with exceptional academic performance."
+        ]
+    }
+]
+
+export const projects = [
+    {
+        name: "AI Chatbot",
+        description: ["Developed an AI-powered chatbot using <strong>Python</strong> and <strong>TensorFlow</strong>"],
+        image: "images/project.jpg",
+        link: "https://github.com/yourusername/ai-chatbot"
+    },
+];

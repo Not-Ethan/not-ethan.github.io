@@ -10,6 +10,7 @@
     portfolio website.
 */
 
+import { populateExperience } from './main.js';
 (function($) {
 
     // Show current year
@@ -52,28 +53,34 @@
             scrollTop: scrollDistance + 'px'
         }, 500);
     });
-
-    // Create timeline
     $('#experience-timeline').each(function() {
-
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
-
+        populateExperience();
+        const $this = $(this); // Store reference to this
+        const $userContent = $this.children('div'); // user content
         // Create each timeline block
         $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+            $(this).addClass('vtimeline-content fade-in').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
         });
-
+        
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
             $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
         });
-
-        // Add dates to the timeline if exists
+        
+        // Add dates and locations to the timeline if they exist
         $this.find('.vtimeline-content').each(function() {
             var date = $(this).data('date');
-            if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+            var location = $(this).data('location');
+
+            if (date) { // Add date if it exists
+                $(this).parent().prepend('<span class="vtimeline-date">' + date + '</span>');
+            }
+
+            if (location) {
+                // Wrap the title and location in a flex container
+                const title = $(this).find('h3');
+                title.wrap('<div class="vtimeline-title-container" style="display: flex; justify-content: space-between; align-items: center;"></div>');
+                title.after(`<span class="vtimeline-location" style="font-weight: normal; font-size: 0.9em; color: #666;">${location}</span>`);
             }
         });
 
@@ -97,4 +104,4 @@
         });
     });
 
-})(jQuery);
+})(window.$);

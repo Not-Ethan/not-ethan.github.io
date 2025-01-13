@@ -1,7 +1,7 @@
 {
   "name": "devportfolio-template",
   "version": "1.2.2",
-  "description": "",
+  "description": "🚀 **[Dev Portfolio V2 has arrived. Meet Devfolio, a modern portfolio + blog template built with GatsbyJS and TailwindCSS](https://github.com/RyanFitzgerald/devfolio)** 🚀",
   "main": "js/scripts.js",
   "scripts": {
     "watch": "gulp watch"

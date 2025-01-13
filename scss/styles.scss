@@ -140,6 +140,10 @@ body {
   }
 }
 
+body {
+    overscroll-behavior-y: none;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -568,6 +572,30 @@ footer {
     top: 10px;
     font-weight: 300;
     color: #374054;
+}
+
+/* New location styling for the timeline */
+.vtimeline-location {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 40px; /* Adjust spacing below the date */
+    font-weight: 300;
+    color: #7e8890; /* Subtle, secondary color */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.vtimeline-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vtimeline-location {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #666;
 }
 
 /*
