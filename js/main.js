@@ -4,7 +4,8 @@ import {
     bio,
     experience,
     education,
-    projects
+    projects,
+    skills
 } from '../portfolio_config.js'
 
 // Populates the timeline (called in js/scripts.js)
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     populateEducation();
     populateProjects();
+    populateSkills();
 
 })
 
@@ -119,5 +121,15 @@ function populateProjects() {
 
         // Append the project block to the container
         projectsContainer.appendChild(projectBlock);
+    });
+}
+
+function populateSkills() {
+    const skillsContainer = document.getElementById("skills-list");
+    
+    skills.forEach(skill => {
+        const skillItem = document.createElement("li");
+        skillItem.textContent = skill;
+        skillsContainer.appendChild(skillItem);
     });
 }

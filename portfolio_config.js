@@ -59,7 +59,7 @@ export const projects = [
             "Reached out to debaters online to gain over <strong>300 sign-ups</strong> in the first month."
         ],
         image: "images/project.jpg",
-        link: "https://github.com/yourusername/ai-chatbot"
+        link: "https://github.com/Not-Ethan/DarchAI"
     },
     {
         name: "Newsletta",
@@ -69,6 +69,25 @@ export const projects = [
             "Built video transcription service using <strong>Whisper</strong>.",
             "Designing and building responsive front-end UI using React.",
             "Planning deployment of project via Heroku."
-        ]
+        ],
+        image: "images/project.jpg",
+        link: "https://github.com/Not-Ethan/newsletter"
     }
 ];
+
+export const skills = [
+    "JavaScript",
+    "Python",
+    "Pytorch",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "HTML",
+    "CSS",
+    "Git",
+    "Docker",
+    "Heroku",
+    "Google Cloud",
+    "AWS",
+]
