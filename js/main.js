@@ -110,7 +110,9 @@ function populateProjects() {
             </div>
             <div class="project-info">
                 <h3>${project.name}</h3>
-                <p>${project.description}</p>
+                <ul>
+                    ${project.description.map(item => `<li>${item}</li>`).join('')}
+                </ul>
                 <a href="${project.link}" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
         `;
