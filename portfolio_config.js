@@ -2,7 +2,7 @@ export const fullname = "Ethan Wang"
 export const title = "Computer Science Student"
 export const bio = [
     "Hey there, I'm Ethan!",
-    "As a <strong>Computer Science student</strong> at Case Western Reserve University, I'm deeply passionate about creating innovative software solutions that solve real-world problems. My experience is with, <strong>web development</strong>, and <strong>AI-powered tools</strong>, and I love working on projects that merge technology with user-centric design.",
+    "As a <strong>Computer Science student</strong> at Case Western Reserve University, I'm deeply passionate about creating innovative software solutions that solve real-world problems. My experience is with <strong>full-stack web applications</strong> and <strong>AI-powered tools</strong>, and I love working on projects that merge technology with user-centric design.",
     "When I'm not coding, you can probably find me in the gym or learning a new song on the piano.",
 ]
 export const experience = [
@@ -51,9 +51,24 @@ export const education = [
 
 export const projects = [
     {
-        name: "AI Chatbot",
-        description: ["Developed an AI-powered chatbot using <strong>Python</strong> and <strong>TensorFlow</strong>"],
+        name: "DarchAI",
+        description: [
+            "Built a full stack web application using <strong>Express</strong>, <strong>EJS</strong>, and <strong>MongoDB</strong>, to enhance research efficiency for debaters.",
+            "Trained, tested, and compared multiple AI models via Lambda Labs cloud GPUs using <strong>Pytorch</strong> and <strong>Huggingface</strong>.",
+            "Deployed application to <strong>Google Cloud</strong> compute engine.",
+            "Reached out to debaters online to gain over <strong>300 sign-ups</strong> in the first month."
+        ],
         image: "images/project.jpg",
         link: "https://github.com/yourusername/ai-chatbot"
     },
+    {
+        name: "Newsletta",
+        description: [
+            "Developing a <strong>full-stack web application</strong> using Express serving <strong>REST API</strong> with <strong>React</strong> as the frontend that allows users to convert their podcasts into fully formatted newsletters.",
+            "Implemented custom email-magic link login flow using <strong>Mailgun</strong> API and <strong>Redis</strong>.",
+            "Built video transcription service using <strong>Whisper</strong>.",
+            "Designing and building responsive front-end UI using React.",
+            "Planning deployment of project via Heroku."
+        ]
+    }
 ];
